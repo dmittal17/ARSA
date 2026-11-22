@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { toast } from "sonner";
-import { MapPin, Mail, Phone, Clock, Send, MessageSquare, Linkedin, ExternalLink } from "lucide-react";
+import { MapPin, Mail, Phone, Clock, Send, MessageSquare, Instagram, ExternalLink } from "lucide-react";
 import { createContactMessage } from "@/lib/firebase/store";
 import { Card } from "@/components/ui/Card";
 import { Input } from "@/components/ui/Input";
@@ -204,14 +204,14 @@ export default function ContactPage() {
 
             <div className="pt-3 border-t border-hairline flex items-center gap-3">
               <a
-                href="https://www.linkedin.com/company/arsa-rscoe"
+                href="https://www.instagram.com/arsa.rscoe/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-alt border border-hairline text-ink-2 hover:text-primary transition-colors text-xs font-medium"
-                aria-label="LinkedIn"
+                aria-label="Instagram"
               >
-                <Linkedin className="w-3.5 h-3.5" />
-                <span>LinkedIn</span>
+                <Instagram className="w-3.5 h-3.5" />
+                <span>Instagram (@arsa.rscoe)</span>
               </a>
             </div>
           </Card>

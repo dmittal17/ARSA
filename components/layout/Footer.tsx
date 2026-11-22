@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Phone, ExternalLink, Linkedin, ArrowUpRight } from "lucide-react";
+import { Phone, ExternalLink, Instagram, ArrowUpRight } from "lucide-react";
 
 export function Footer() {
   return (
@@ -25,14 +25,14 @@ export function Footer() {
             </p>
             <div className="pt-2">
               <a
-                href="https://www.linkedin.com/company/arsa-rscoe"
+                href="https://www.instagram.com/arsa.rscoe/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface border border-hairline text-ink-2 hover:text-primary hover:border-primary/40 transition-colors shadow-subtle"
-                aria-label="ARSA LinkedIn"
+                aria-label="ARSA Instagram"
               >
-                <Linkedin className="w-3.5 h-3.5" />
-                <span className="text-[11px] font-medium">ARSA LinkedIn</span>
+                <Instagram className="w-3.5 h-3.5" />
+                <span className="text-[11px] font-medium">@arsa.rscoe</span>
               </a>
             </div>
           </div>

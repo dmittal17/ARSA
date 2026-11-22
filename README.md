@@ -87,7 +87,7 @@ The website is crafted around the official brand identity of the ARSA club:
   * Categorized filtering with an interactive full-screen image lightbox.
 
 * **Core Leadership Directory (`/team`)**:
-  * Roster of Faculty Mentors, President, Vice President, Technical Heads, and Domain Leads with direct LinkedIn and GitHub profiles.
+  * Roster of Faculty Mentors, President, Vice President, Technical Heads, and Domain Leads with direct Instagram and GitHub profiles.
 
 * **Membership Recruitment (`/join`)**:
   * Application portal for undergraduate engineering students to apply for technical, management, design, and media domains in ARSA.
@@ -96,7 +96,7 @@ The website is crafted around the official brand identity of the ARSA club:
   * Direct inquiry form, official contact hotline (`+91 85955 15962`), department email, and interactive campus map for JSPM RSCOE Tathawade.
 
 * **Universal Footer**:
-  * Department branding, quick navigation links, direct college link ([jspmrscoe.edu.in](https://www.jspmrscoe.edu.in)), ARSA LinkedIn profile, phone hotline, and academic copyright.
+  * Department branding, quick navigation links, direct college link ([jspmrscoe.edu.in](https://www.jspmrscoe.edu.in)), ARSA Instagram profile ([@arsa.rscoe](https://www.instagram.com/arsa.rscoe/)), phone hotline, and academic copyright.
 
 ---
 

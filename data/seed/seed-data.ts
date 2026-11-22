@@ -456,7 +456,7 @@ export const SEED_TEAM: TeamMember[] = [
     domain: "Department of Automation & Robotics",
     year: "Faculty Mentor",
     photoUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
-    linkedinUrl: "https://www.linkedin.com/company/arsa-rscoe",
+    instagramUrl: "https://www.instagram.com/arsa.rscoe/",
     order: 1
   },
   {
@@ -466,7 +466,7 @@ export const SEED_TEAM: TeamMember[] = [
     domain: "Department of Automation & Robotics",
     year: "Faculty Coordinator",
     photoUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
-    linkedinUrl: "https://www.linkedin.com/company/arsa-rscoe",
+    instagramUrl: "https://www.instagram.com/arsa.rscoe/",
     order: 2
   },
   {
@@ -476,7 +476,7 @@ export const SEED_TEAM: TeamMember[] = [
     domain: "Executive Leadership",
     year: "BE Automation & Robotics",
     photoUrl: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80",
-    linkedinUrl: "https://www.linkedin.com/company/arsa-rscoe",
+    instagramUrl: "https://www.instagram.com/arsa.rscoe/",
     order: 3
   },
   {
@@ -486,7 +486,7 @@ export const SEED_TEAM: TeamMember[] = [
     domain: "Executive & Robotics Lead",
     year: "BE Automation & Robotics",
     photoUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
-    linkedinUrl: "https://www.linkedin.com/company/arsa-rscoe",
+    instagramUrl: "https://www.instagram.com/arsa.rscoe/",
     order: 4
   },
   {
@@ -496,7 +496,7 @@ export const SEED_TEAM: TeamMember[] = [
     domain: "Embedded Systems & Hardware",
     year: "TE Automation & Robotics",
     photoUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
-    linkedinUrl: "https://www.linkedin.com/company/arsa-rscoe",
+    instagramUrl: "https://www.instagram.com/arsa.rscoe/",
     githubUrl: "https://github.com",
     order: 5
   },
@@ -507,7 +507,7 @@ export const SEED_TEAM: TeamMember[] = [
     domain: "Full-Stack & Robotics Middleware",
     year: "TE Automation & Robotics",
     photoUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80",
-    linkedinUrl: "https://www.linkedin.com/company/arsa-rscoe",
+    instagramUrl: "https://www.instagram.com/arsa.rscoe/",
     githubUrl: "https://github.com",
     order: 6
   },
@@ -518,7 +518,7 @@ export const SEED_TEAM: TeamMember[] = [
     domain: "Competitions & Operations",
     year: "TE Automation & Robotics",
     photoUrl: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
-    linkedinUrl: "https://www.linkedin.com/company/arsa-rscoe",
+    instagramUrl: "https://www.instagram.com/arsa.rscoe/",
     order: 7
   },
   {
@@ -528,7 +528,7 @@ export const SEED_TEAM: TeamMember[] = [
     domain: "Outreach & Design",
     year: "SE Automation & Robotics",
     photoUrl: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80",
-    linkedinUrl: "https://www.linkedin.com/company/arsa-rscoe",
+    instagramUrl: "https://www.instagram.com/arsa.rscoe/",
     order: 8
   }
 ];
