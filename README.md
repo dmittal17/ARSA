@@ -1,8 +1,10 @@
 # ARSA Events Portal 🤖⚡
 
 > **Official Digital & Events Portal** for the **Automation & Robotics Student Association (ARSA)**  
-> *Department of Automation & Robotics, JSPM's Rajarshi Shahu College of Engineering, Pune*
+> *Department of Automation & Robotics, JSPM's Rajarshi Shahu College of Engineering, Pune*  
+> 🌐 **Live Website**: **[https://arsa-psi.vercel.app](https://arsa-psi.vercel.app)**
 
+[![Live Website](https://img.shields.io/badge/Live%20Website-arsa--psi.vercel.app-000000?style=for-the-badge&logo=vercel)](https://arsa-psi.vercel.app)
 [![Next.js](https://img.shields.io/badge/Next.js-14.2-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)

@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://arsa-psi.vercel.app"),
   title: {
     default: "ARSA Events Portal | JSPM RSCOE Pune",
     template: "%s | ARSA Events Portal",
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ARSA Events Portal | Dept. of Automation & Robotics, JSPM RSCOE",
     description: "Automate. Innovate. Build. Browse upcoming robotics workshops, hackathons, and register in one click.",
+    url: "https://arsa-psi.vercel.app",
     type: "website",
     locale: "en_IN",
     siteName: "ARSA Events Portal",

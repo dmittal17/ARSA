@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { SEED_EVENTS } from "@/data/seed/seed-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://arsa-rscoe.org";
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://arsa-psi.vercel.app";
 
   const staticRoutes = [
     "",
