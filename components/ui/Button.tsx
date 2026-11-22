@@ -15,7 +15,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     const variantStyles = {
       // DDRobocon Apple-style Royal Blue button
       primary:
-        "bg-primary text-white hover:bg-primary-hover shadow-sm border border-transparent font-medium",
+        "bg-primary text-white hover:bg-primary-hover shadow-sm hover:shadow-[0_0_22px_rgba(255,42,64,0.45)] border border-transparent font-medium",
       // Clean secondary surface
       secondary:
         "bg-surface-alt text-ink hover:bg-surface-grouped border border-hairline font-medium",

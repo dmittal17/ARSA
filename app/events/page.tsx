@@ -75,15 +75,18 @@ export default function EventsPage() {
   };
 
   return (
-    <div className="py-12 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+    <div className="py-12 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 relative">
+      {/* Ambient background flare */}
+      <div className="glow-flare-red -top-20 left-1/2 -translate-x-1/2 w-[600px] h-[300px] opacity-40" />
+
       {/* Header */}
-      <div className="space-y-3">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-soft text-primary text-xs font-medium">
+      <div className="space-y-3 relative z-10">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold">
           <Calendar className="w-3.5 h-3.5" />
           <span>Academic Cycle 2026-2027</span>
         </div>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-ink tracking-tight">
-          Events & Hackathons
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-extrabold text-ink tracking-tight">
+          Events & <span className="animate-shimmer-text">Competitions</span>
         </h1>
         <p className="text-sm text-ink-2 max-w-2xl leading-relaxed">
           Explore upcoming autonomous robotics bootcamps, hardware prototyping tracks, and technical competitions hosted by ARSA JSPM RSCOE.
@@ -91,7 +94,7 @@ export default function EventsPage() {
       </div>
 
       {/* Filter and Search Bar */}
-      <div className="p-5 sm:p-6 rounded-2xl dd-card space-y-4">
+      <div className="p-5 sm:p-6 rounded-2xl hud-card space-y-4 relative z-10">
         <div className="flex flex-col md:flex-row gap-3">
           {/* Search Input */}
           <div className="relative flex-1">

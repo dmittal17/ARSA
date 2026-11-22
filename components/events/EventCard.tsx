@@ -18,7 +18,7 @@ export function EventCard({ event, onQuickRegister }: EventCardProps) {
   const isRegistrationClosed = !event.isRegistrationOpen || isPast;
 
   return (
-    <Card className="flex flex-col h-full group dd-card">
+    <Card className="flex flex-col h-full group hud-card overflow-hidden">
       {/* Poster Image & Badges */}
       <div className="relative aspect-[16/9] w-full overflow-hidden bg-surface-alt">
         <SmartImage

@@ -59,17 +59,20 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* DDRobocon Style Clean Brand Mark */}
+          {/* Cyber Brand Mark */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-8 h-8 rounded-lg bg-primary-soft border border-primary/20 flex items-center justify-center transition-colors">
-              <span className="w-2 h-2 rounded-full bg-primary" />
+            <div className="w-8 h-8 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center transition-colors shadow-[0_0_15px_rgba(255,42,64,0.3)]">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+              </span>
             </div>
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-heading font-semibold text-base tracking-tight text-ink group-hover:text-primary transition-colors">
                   ARSA
                 </span>
-                <span className="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded-full bg-surface-alt text-ink-2 border border-hairline">
+                <span className="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded-full bg-surface-alt text-ink-2 border border-hairline tracking-wider">
                   RSCOE
                 </span>
               </div>
@@ -90,7 +93,7 @@ export function Navbar() {
                   className={cn(
                     "text-xs px-3 py-1.5 rounded-full transition-all duration-200",
                     isActive
-                      ? "text-primary bg-surface font-semibold shadow-subtle"
+                      ? "text-primary bg-surface font-semibold shadow-subtle border border-primary/25"
                       : "text-ink-2 hover:text-ink hover:bg-surface/50"
                   )}
                 >

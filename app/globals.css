@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* ARSA Club Theme - Red, Gray, Black & White (Light Default) */
+    /* ARSA Light Theme */
     --canvas: #f8f9fa;
     --canvas-alt: #f1f3f5;
     --surface: #ffffff;
@@ -24,7 +24,6 @@
     --accent-hover: #b91c1c;
     --accent-soft: rgba(220, 38, 38, 0.08);
 
-    /* Radix / shadcn compatible variables */
     --background: 0 0% 98%;
     --foreground: 222 47% 11%;
     --card: 0 0% 100%;
@@ -40,35 +39,35 @@
   }
 
   .dark {
-    /* ARSA Dark Theme - Sleek Carbon Black, Gray, White & Vivid Red */
-    --canvas: #090a0f;
-    --canvas-alt: #111218;
-    --surface: #15161f;
-    --surface-alt: #1c1e28;
-    --surface-grouped: #252734;
+    /* Techfest Cyber Robotic Theme (Deep Space Onyx & Electric Crimson) */
+    --canvas: #06070a;
+    --canvas-alt: #0c0e15;
+    --surface: #10121a;
+    --surface-alt: #161824;
+    --surface-grouped: #1f2233;
 
     --ink: #ffffff;
     --ink-2: #cbd5e1;
     --ink-3: #64748b;
 
-    --hairline: rgba(255, 255, 255, 0.1);
-    --hairline-focus: rgba(239, 68, 68, 0.45);
+    --hairline: rgba(255, 255, 255, 0.08);
+    --hairline-focus: rgba(239, 68, 68, 0.5);
 
-    --accent: #ef4444;
-    --accent-hover: #dc2626;
-    --accent-soft: rgba(239, 68, 68, 0.16);
+    --accent: #ff2a40;
+    --accent-hover: #ff4757;
+    --accent-soft: rgba(255, 42, 64, 0.16);
 
-    --background: 230 25% 5%;
+    --background: 230 25% 4%;
     --foreground: 0 0% 98%;
-    --card: 230 18% 10%;
+    --card: 230 18% 9%;
     --card-foreground: 0 0% 98%;
-    --popover: 230 18% 10%;
+    --popover: 230 18% 9%;
     --popover-foreground: 0 0% 98%;
-    --muted: 230 15% 15%;
+    --muted: 230 15% 14%;
     --muted-foreground: 215 20% 65%;
-    --border: 230 15% 18%;
-    --input: 230 15% 18%;
-    --ring: 0 84% 60%;
+    --border: 230 15% 16%;
+    --input: 230 15% 16%;
+    --ring: 354 100% 58%;
   }
 }
 
@@ -81,6 +80,7 @@
     color: var(--ink);
     @apply font-sans antialiased;
     min-height: 100vh;
+    overflow-x: hidden;
   }
   ::selection {
     background-color: var(--accent-soft);
@@ -88,23 +88,113 @@
   }
 }
 
-/* Minimal subtle scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+/* Cybernetic Grid Pattern */
+.bg-cyber-grid {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 36px 36px;
 }
 
-::-webkit-scrollbar-track {
-  background: transparent;
+.dark .bg-cyber-grid {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 36px 36px;
 }
 
-::-webkit-scrollbar-thumb {
-  background: rgba(140, 140, 145, 0.3);
+/* Techfest Animated Shimmer Headline */
+@keyframes textShimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-shimmer-text {
+  background: linear-gradient(90deg, #ffffff 0%, #ff4d6d 25%, #ffffff 50%, #ff1a3c 75%, #ffffff 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textShimmer 6s linear infinite;
+}
+
+/* Floating Radial Glow Flare */
+.glow-flare-red {
+  position: absolute;
   border-radius: 9999px;
+  filter: blur(80px);
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(255, 42, 64, 0.22) 0%, rgba(255, 42, 64, 0) 70%);
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(140, 140, 145, 0.5);
+/* HUD Corner Brackets for Cards */
+.hud-card {
+  position: relative;
+  background-color: var(--surface);
+  border: 1px solid var(--hairline);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hud-card::before, .hud-card::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+
+.hud-card::before {
+  top: -1px; left: -1px;
+  border-top: 2px solid var(--accent);
+  border-left: 2px solid var(--accent);
+}
+
+.hud-card::after {
+  bottom: -1px; right: -1px;
+  border-bottom: 2px solid var(--accent);
+  border-right: 2px solid var(--accent);
+}
+
+.hud-card:hover {
+  border-color: rgba(255, 42, 64, 0.35);
+  box-shadow: 0 12px 32px rgba(255, 42, 64, 0.12);
+  transform: translateY(-2px);
+}
+
+.hud-card:hover::before, .hud-card:hover::after {
+  width: 14px;
+  height: 14px;
+  opacity: 1;
+  box-shadow: 0 0 12px var(--accent);
+}
+
+/* Button Glow Effect */
+.btn-glow {
+  box-shadow: 0 0 20px rgba(255, 42, 64, 0.35);
+  transition: all 0.25s ease;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 35px rgba(255, 42, 64, 0.65);
+  transform: translateY(-1px);
+}
+
+/* Infinite Marquee Ticker */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }
 
 /* Clean minimal card styling */
@@ -116,13 +206,13 @@
 }
 
 .dd-card:hover {
-  border-color: rgba(220, 38, 38, 0.3);
-  box-shadow: 0 8px 24px rgba(220, 38, 38, 0.08);
+  border-color: rgba(255, 42, 64, 0.3);
+  box-shadow: 0 8px 24px rgba(255, 42, 64, 0.08);
 }
 
 .dark .dd-card:hover {
-  border-color: rgba(239, 68, 68, 0.35);
-  box-shadow: 0 8px 24px rgba(239, 68, 68, 0.2);
+  border-color: rgba(255, 42, 64, 0.4);
+  box-shadow: 0 8px 24px rgba(255, 42, 64, 0.2);
 }
 
 /* Badge styling */
