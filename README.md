@@ -146,34 +146,6 @@ The rules enforce:
 
 ---
 
-## 🛡️ Admin Panel & Demo Access
-
-Navigate to [http://localhost:3000/admin](http://localhost:3000/admin).
-
-For quick evaluation:
-- **Email**: `admin@arsa.org` or any `@jspmrscoe.edu.in` email
-- **Password**: `admin123` (or any 6+ character password in demo mode)
-
-From the Admin sidebar, click **"Seed 2027 Sample Data"** to immediately populate:
-1. Arduino & ESP32 IoT Prototyping Workshop
-2. ROS2 + Gazebo Autonomous Navigation Bootcamp
-3. Line Follower & Maze Solver Championship
-4. Automate-It 24H Robotics Hackathon
-5. Industrial Computer Vision & Edge AI Workshop
-6. RoboQuest All-Terrain Obstacle Challenge
-
----
-
-## 🌐 Deploy to Vercel
-
-1. Push your code to a GitHub repository.
-2. Go to [Vercel](https://vercel.com/) and click **New Project**.
-3. Import your repository.
-4. In the **Environment Variables** section, add all variables from `.env.example`.
-5. Click **Deploy**.
-
----
-
 ## 🏛️ Department Credits
 
 - **Department**: Automation & Robotics Engineering
