@@ -107,7 +107,7 @@ ARSA presents an intensive 3-Day Autonomous Navigation Bootcamp designed for rob
     tagline: "High-speed line tracing, inverted junctions, and acute hairpin bends on an arena track.",
     category: "Competition",
     status: "Upcoming",
-    posterUrl: "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1200&q=80",
+    posterUrl: "https://images.unsplash.com/photo-1678225867994-e7a5b071ebfd?auto=format&fit=crop&w=1200&q=80",
     startDate: "2027-02-14T08:30:00.000Z",
     endDate: "2027-02-14T19:00:00.000Z",
     registrationDeadline: "2027-02-10T18:00:00.000Z",
@@ -430,7 +430,7 @@ export const SEED_PROJECTS: ProjectItem[] = [
     team: "ARSA Member Projects",
     description: "Twelve degree-of-freedom quadruped robot with custom brushless actuator modules and inverse kinematics gait generation simulating canine trot and crawl locomotion patterns.",
     tags: ["Biomimetics", "Inverse Kinematics", "C++", "3D Printing", "Teensy 4.1"],
-    imageUrl: "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1000&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1786673606192-15138f83ec2d?auto=format&fit=crop&w=1000&q=80",
     githubUrl: "https://github.com/arsa-jspmrscoe/robocanine-kinematics",
     featured: true,
     year: "2026"
@@ -540,7 +540,7 @@ export const SEED_GALLERY: GalleryItem[] = [
     eventTitle: "Line Follower & Mesh Challenge 2026",
     year: "2026",
     category: "Competition",
-    imageUrl: "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1000&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1775826476139-b5968f28ebdb?auto=format&fit=crop&w=1000&q=80",
     description: "Students fine-tuning PID gains during the final high-speed arena trials."
   },
   {
@@ -618,7 +618,7 @@ export const SEED_PAST_EVENTS = [
     prizesDistributed: "₹35,000",
     winnerTeam: "Team Torque (COEP Pune)",
     runnerUpTeam: "Team AlphaBot (JSPM RSCOE)",
-    posterUrl: "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1000&q=80",
+    posterUrl: "https://images.unsplash.com/photo-1678225867994-e7a5b071ebfd?auto=format&fit=crop&w=1000&q=80",
     summary: "Over 50 teams from across 18 engineering institutes competed on a 50-meter challenging terrain track with dynamic obstacle bridges."
   },
   {

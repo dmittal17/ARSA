@@ -28,12 +28,12 @@ import {
 } from "@/data/seed/seed-data";
 
 const LOCAL_STORAGE_KEYS = {
-  EVENTS: "arsa_events_store",
+  EVENTS: "arsa_events_store_v4",
   REGISTRATIONS: "arsa_registrations_store",
   MEMBERS: "arsa_members_store",
-  PROJECTS: "arsa_projects_store",
-  TEAM: "arsa_team_store",
-  GALLERY: "arsa_gallery_store",
+  PROJECTS: "arsa_projects_store_v4",
+  TEAM: "arsa_team_store_v4",
+  GALLERY: "arsa_gallery_store_v4",
   MESSAGES: "arsa_messages_store",
 };
 
@@ -77,7 +77,17 @@ export async function getEvents(): Promise<ARSAEvent[]> {
 
   // Fallback to local storage or seed data
   const local = getLocalItem<ARSAEvent[]>(LOCAL_STORAGE_KEYS.EVENTS, []);
-  if (local.length > 0) return local;
+  if (local.length > 0) {
+    return local.map((evt) => {
+      if (evt.posterUrl?.includes("photo-1563245372")) {
+        return {
+          ...evt,
+          posterUrl: "https://images.unsplash.com/photo-1678225867994-e7a5b071ebfd?auto=format&fit=crop&w=1200&q=80",
+        };
+      }
+      return evt;
+    });
+  }
 
   setLocalItem(LOCAL_STORAGE_KEYS.EVENTS, SEED_EVENTS);
   return SEED_EVENTS;
