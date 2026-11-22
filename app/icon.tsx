@@ -12,21 +12,42 @@ export default function Icon() {
     (
       <div
         style={{
-          fontSize: 18,
-          background: "#0B0F19",
           width: "100%",
           height: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          borderRadius: 8,
-          border: "1.5px solid #00F5D4",
-          color: "#00F5D4",
-          fontWeight: 300,
-          fontFamily: "monospace",
+          background: "linear-gradient(135deg, #0c0e15 0%, #1a0005 100%)",
+          borderRadius: 6,
         }}
       >
-        ⚡
+        {/* Outer red ring */}
+        <div
+          style={{
+            position: "absolute",
+            width: 28,
+            height: 28,
+            borderRadius: "50%",
+            border: "1.5px solid #dc2626",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        />
+        {/* Bold "A" glyph */}
+        <div
+          style={{
+            fontSize: 17,
+            fontWeight: 900,
+            fontFamily: "Arial Black, Arial, sans-serif",
+            color: "#ff2a40",
+            lineHeight: 1,
+            letterSpacing: "-1px",
+            display: "flex",
+          }}
+        >
+          A
+        </div>
       </div>
     ),
     {
